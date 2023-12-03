@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Recipe Book</title>
+  <link href="vstyle.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="heading">
+    <h1 id="RecipeBook">Recipe Book</h1>
+  </div>
+  <div class="Box" id="recipeBox">
+    
+  </div>
+  <button id="AddRecipe" onclick="openForm()">Add Recipe</button>
+
+  <div id="recipeForm" class="form-popup">
+    <form id="recipeFormContent" class="form-container">
+      <h2>Add Recipe</h2>
+      <label for="recipeName"><b>Recipe Name</b></label>
+      <input type="text" placeholder="Enter Recipe Name" name="recipeName" required>
+
+      <label for="ingredients"><b>Ingredients</b></label>
+      <textarea placeholder="Enter Ingredients" name="ingredients" required></textarea>
+
+      <label for="instructions"><b>Instructions</b></label>
+      <textarea placeholder="Enter Instructions" name="instructions" required></textarea>
+
+      <button type="button" id="submitBtn" onclick="addRecipe()">Submit</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+
+  <script src="vscript.js"></script>
+</body>
+
+</html>
